@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.anketa.WorkAnketa">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Сколько вам лет?"
+            />
+
+            <RadioGroup
+                    android:id="@+id/first_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+
+                <RadioButton
+                        android:id="@+id/age_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Менее 18-и"
+                />
+
+                <RadioButton
+                        android:id="@+id/age_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="18-24"
+                />
+
+                <RadioButton
+                        android:id="@+id/age_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="25-44"
+                />
+
+                <RadioButton
+                        android:id="@+id/age_firth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="45-64"
+                />
+
+                <RadioButton
+                        android:id="@+id/age_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="64 и выше"
+                />
+
+            </RadioGroup>
+
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Вы:"
+            />
+
+            <RadioGroup
+                    android:id="@+id/second_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+
+                <RadioButton
+                        android:id="@+id/sq_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Работающий/ая на полную ставку"
+                />
+
+                <RadioButton
+                        android:id="@+id/sq_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Работающий/ая неполный рабочий день"
+                />
+
+                <RadioButton
+                        android:id="@+id/sq_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Безработный/ая"
+                />
+
+                <RadioButton
+                        android:id="@+id/sq_firth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Частный предпринематель"
+                />
+
+                <RadioButton
+                        android:id="@+id/sq_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Студент"
+                />
+
+                <RadioButton
+                        android:id="@+id/sq_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Пенсионер"
+                />
+
+            </RadioGroup>
+
+
+            <View android:layout_width="match_parent"
+                               android:layout_height="1dp"
+                               android:background="@android:color/darker_gray"
+                               android:layout_margin="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Степень Вашего образования:"
+            />
+
+            <RadioGroup
+                    android:id="@+id/third_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+
+                <RadioButton
+                        android:id="@+id/thq_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Начальное образование"
+                />
+
+                <RadioButton
+                        android:id="@+id/thq_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Неполное среднее образование"
+                />
+
+                <RadioButton
+                        android:id="@+id/thq_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Среднеспециальное образование"
+                />
+
+                <RadioButton
+                        android:id="@+id/thq_firth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Высшее профессиональное образование"
+                />
+
+                <RadioButton
+                        android:id="@+id/thq_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Отсутствует"
+                />
+
+
+            </RadioGroup>
+
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Как бы Вы описали себя самого?"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_first"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Общительный"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_second"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Творческий"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_third"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Аналитический"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_fourth"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Робкий"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_five"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Сдержанный"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_six"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Чувствительный"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_seven"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Кооперирующий"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_eight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Руководящий"
+            />
+
+            <CheckBox
+                    android:id="@+id/fo_nine"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Действующий"
+            />
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Где бы Вы хотели работать?"
+            />
+
+            <RadioGroup
+                    android:id="@+id/five_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+
+                <RadioButton
+                        android:id="@+id/fi_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Государственный сектор"
+                />
+
+                <RadioButton
+                        android:id="@+id/fi_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Частный сектор"
+                />
+
+                <RadioButton
+                        android:id="@+id/fi_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Сам/а для себя"
+                />
+
+            </RadioGroup>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Какую рабочую среду Вы предпочитаете?"
+            />
+
+            <RadioGroup
+                    android:id="@+id/six_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+
+                <RadioButton
+                        android:id="@+id/si_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="На улице, на природе"
+                />
+
+                <RadioButton
+                        android:id="@+id/si_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Предпочитаю тихий офис"
+                />
+
+                <RadioButton
+                        android:id="@+id/si_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="В шумном месте, где много интересных людей"
+                />
+
+                <RadioButton
+                        android:id="@+id/si_fourth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="В лаборатории"
+                />
+
+                <RadioButton
+                        android:id="@+id/si_five"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="В классе"
+                />
+
+                <RadioButton
+                        android:id="@+id/si_six"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="В другом месте:"
+                />
+
+                <EditText
+                        android:id="@+id/si_other"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:enabled="false"
+                        android:inputType="text"/>
+
+            </RadioGroup>
+
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Вы бы хотели работать с:"
+            />
+
+            <RadioGroup
+                    android:id="@+id/seven_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+
+                <RadioButton
+                        android:id="@+id/sv_first"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Людьми"
+                />
+
+                <RadioButton
+                        android:id="@+id/sv_second"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Вещами"
+                />
+
+                <RadioButton
+                        android:id="@+id/sv_third"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Информацией"
+                />
+
+                <RadioButton
+                        android:id="@+id/sv_fourth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Деньгами"
+                />
+
+            </RadioGroup>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="Какой вид работы Вы считаете самым интересным?"
+            />
+
+            <MultiAutoCompleteTextView
+                    android:id="@+id/eight_question"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <Button
+                    android:id="@+id/success"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Завершить"
+            />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</android.support.constraint.ConstraintLayout>
