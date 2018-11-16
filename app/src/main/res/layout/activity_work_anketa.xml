@@ -467,11 +467,26 @@
             />
 
 
+            <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="E-MAIL"
+            />
+
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
             <Button
                     android:id="@+id/success"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:text="Завершить"
+                    android:onClick="submit"
             />
 
 
