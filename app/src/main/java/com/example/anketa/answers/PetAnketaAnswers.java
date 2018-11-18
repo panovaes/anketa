@@ -1,4 +1,4 @@
-package com.example.anketa;
+package com.example.anketa.answers;
 public class PetAnketaAnswers {
     public String q1;
     public String q2_1;

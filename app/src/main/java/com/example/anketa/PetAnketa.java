@@ -9,6 +9,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import com.example.anketa.answers.PetAnketaAnswers;
 
 import java.util.ArrayList;
 import java.util.regex.Pattern;
