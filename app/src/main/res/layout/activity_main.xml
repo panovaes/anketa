@@ -58,7 +58,8 @@
                         android:layout_height="wrap_content"
                         android:id="@+id/anketa_pet"
                         android:drawableTop="@drawable/cat"
-                        android:text="домашниe питомцы"
+                        android:textAlignment="center"
+                        android:text="питомцы"
                         android:gravity="left|center_vertical"/>
 
             </TableRow>

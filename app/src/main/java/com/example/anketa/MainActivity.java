@@ -24,5 +24,14 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, WorkAnketa.class));
             }
         });
+
+
+        Button startPetAnketa = findViewById(R.id.anketa_pet);
+        startPetAnketa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, PetAnketa.class));
+            }
+        });
     }
 }

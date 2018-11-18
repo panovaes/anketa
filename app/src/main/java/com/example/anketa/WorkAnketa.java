@@ -80,9 +80,7 @@ public class WorkAnketa extends Activity {
             return;
         }
 
-        View firstRadioButton = first_question.findViewById(firstRadioButtonID);
-        int firstId = first_question.indexOfChild(firstRadioButton);
-        otvet.first = ((RadioButton) first_question.getChildAt(firstId)).getText().toString();
+        otvet.first = getText(first_question, firstRadioButtonID);
 
 
         int secondRadioButtonId = second_question.getCheckedRadioButtonId();
@@ -92,9 +90,7 @@ public class WorkAnketa extends Activity {
             return;
         }
 
-        View secondRadioButton = second_question.findViewById(secondRadioButtonId);
-        int secondId = second_question.indexOfChild(secondRadioButton);
-        otvet.second = ((RadioButton) second_question.getChildAt(secondId)).getText().toString();
+        otvet.second = getText(second_question, secondRadioButtonId);
 
 
         int thirdRadioButtonId = third_question.getCheckedRadioButtonId();
@@ -104,10 +100,7 @@ public class WorkAnketa extends Activity {
             return;
         }
 
-        View thirdRadioButton = third_question.findViewById(thirdRadioButtonId);
-        int thirdId = third_question.indexOfChild(thirdRadioButton);
-        otvet.third = ((RadioButton) third_question.getChildAt(thirdId)).getText().toString();
-
+        otvet.third = getText(third_question, thirdRadioButtonId);
 
 
         String fouthOtvet = "";
@@ -131,9 +124,7 @@ public class WorkAnketa extends Activity {
             return;
         }
 
-        View fiveRadioButton = five_question.findViewById(fiveRadioButtonId);
-        int fiveId = five_question.indexOfChild(fiveRadioButton);
-        otvet.fifth = ((RadioButton) five_question.getChildAt(fiveId)).getText().toString();
+        otvet.fifth = getText(five_question, firstRadioButtonID);
 
 
 
@@ -153,9 +144,7 @@ public class WorkAnketa extends Activity {
                 return;
             }
         } else {
-            View sixRadioButton = six_question.findViewById(sixRadioButtonId);
-            int sixId = six_question.indexOfChild(sixRadioButton);
-            sixOtvet = ((RadioButton) six_question.getChildAt(sixId)).getText().toString();
+            sixOtvet = getText(six_question, sixRadioButtonId);
         }
 
         otvet.sixth = sixOtvet;
@@ -169,9 +158,9 @@ public class WorkAnketa extends Activity {
             return;
         }
 
-        View sevenRadioButton = seven_question.findViewById(sevenRadioButtonID);
-        int sevenId = seven_question.indexOfChild(sevenRadioButton);
-        otvet.seventh = ((RadioButton) seven_question.getChildAt(sevenId)).getText().toString();
+        otvet.seventh = getText(seven_question, sevenRadioButtonID);
+
+
 
         MultiAutoCompleteTextView eight_question = findViewById(R.id.eight_question);
         if (eight_question.getText().toString().trim().equals("")) {
@@ -189,7 +178,15 @@ public class WorkAnketa extends Activity {
         }
 
 
-        otvet.eighth = emailEdit.getText().toString().trim();
+        otvet.email = emailEdit.getText().toString().trim();
+    }
+
+
+    public String getText(RadioGroup radioGroup, int radioId) {
+        View radioButton = radioGroup.findViewById(radioId);
+        int index = radioGroup.indexOfChild(radioButton);
+        RadioButton button = (RadioButton) radioGroup.getChildAt(index);
+        return button.getText().toString();
     }
 
 

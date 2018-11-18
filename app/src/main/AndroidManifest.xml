@@ -18,6 +18,8 @@
         </activity>
         <activity android:name=".WorkAnketa">
         </activity>
+        <activity android:name=".PetAnketa">
+        </activity>
     </application>
 
 </manifest>
