@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.anketa.CafeAnketa">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="1. Как часто Вы ходите в кафе?"
+            />
+            <RadioGroup
+                    android:id="@+id/q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Каждый день"
+                />
+                <RadioButton
+                        android:id="@+id/q1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Несколько раз в неделю"
+                />
+                <RadioButton
+                        android:id="@+id/q1_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Один раз в неделю"
+                />
+                <RadioButton
+                        android:id="@+id/q1_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Несколько раз в месяц"
+                />
+                <RadioButton
+                        android:id="@+id/q1_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Один раз в месяц"
+                />
+                <RadioButton
+                        android:id="@+id/q1_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Несколько раз в год"
+                />
+                <RadioButton
+                        android:id="@+id/q1_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Никогда"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="2. Как Вы бы оценили персонал нашего кафе?"
+            />
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="1. Персонал сразу заметил и обслужил меня"
+                />
+                <RatingBar
+                        android:id="@+id/q2_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:stepSize="1.0"
+                        android:numStars="5"
+                        android:rating="0.0"
+                />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="2. Персонал был приятный и услужливый"
+                />
+                <RatingBar
+                        android:id="@+id/q2_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:stepSize="1.0"
+                        android:numStars="5"
+                        android:rating="0.0"
+                />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="3. Персонал не создавал давление"
+                />
+                <RatingBar
+                        android:id="@+id/q2_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:stepSize="1.0"
+                        android:numStars="5"
+                        android:rating="0.0"
+                />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="4. Обслуживание было быстрое"
+                />
+                <RatingBar
+                        android:id="@+id/q2_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:stepSize="1.0"
+                        android:numStars="5"
+                        android:rating="0.0"
+                />
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="5. Персонал вышел мне со всем на встречу"
+                />
+                <RatingBar
+                        android:id="@+id/q2_5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:isIndicator="false"
+                        android:stepSize="1.0"
+                        android:numStars="5"
+                        android:rating="0.0"
+                />
+            </LinearLayout>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="3. Как Вы, в общем, оцениваете наше кафе?"
+            />
+            <RatingBar
+                    android:id="@+id/q3_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:isIndicator="false"
+                    android:stepSize="1.0"
+                    android:numStars="5"
+                    android:rating="0.0"
+            />
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="4. Вы бы рекомендовали наше кафе своим знакомым?"
+            />
+            <RadioGroup
+                    android:id="@+id/q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Да"
+                />
+                <RadioButton
+                        android:id="@+id/q4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нет"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="5. Укажите Ваш пол:"
+            />
+            <RadioGroup
+                    android:id="@+id/q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Мужчина"
+                />
+                <RadioButton
+                        android:id="@+id/q5_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Женщина"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="6. В какую возрастную группу Вы входите?"
+            />
+            <RadioGroup
+                    android:id="@+id/q6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q6_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="менее 20"
+                />
+                <RadioButton
+                        android:id="@+id/q6_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="21-30"
+                />
+                <RadioButton
+                        android:id="@+id/q6_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="31-40"
+                />
+                <RadioButton
+                        android:id="@+id/q6_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="41-50"
+                />
+                <RadioButton
+                        android:id="@+id/q6_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="51-60"
+                />
+                <RadioButton
+                        android:id="@+id/q6_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="60+"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="7. Если у Вас есть предложения об улучшении сервиса нашего кафе, напишите их сюда:"
+            />
+            <MultiAutoCompleteTextView
+                    android:id="@+id/q7"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="E-MAIL"
+            />
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+            <Button
+                    android:id="@+id/success"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Завершить"
+                    android:onClick="submit"
+            />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
