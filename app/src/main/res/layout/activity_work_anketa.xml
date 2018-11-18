@@ -22,7 +22,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Сколько вам лет?"
+                    android:text="1. Сколько вам лет?"
             />
 
             <RadioGroup
@@ -81,7 +81,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Вы:"
+                    android:text="2. Вы:"
             />
 
             <RadioGroup
@@ -147,7 +147,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Степень Вашего образования:"
+                    android:text="3. Степень Вашего образования:"
             />
 
             <RadioGroup
@@ -207,7 +207,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Как бы Вы описали себя самого?"
+                    android:text="4. Как бы Вы описали себя самого?"
             />
 
             <CheckBox
@@ -284,7 +284,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Где бы Вы хотели работать?"
+                    android:text="5. Где бы Вы хотели работать?"
             />
 
             <RadioGroup
@@ -328,7 +328,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Какую рабочую среду Вы предпочитаете?"
+                    android:text="6. Какую рабочую среду Вы предпочитаете?"
             />
 
             <RadioGroup
@@ -401,7 +401,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Вы бы хотели работать с:"
+                    android:text="7. Вы бы хотели работать с:"
             />
 
             <RadioGroup
@@ -452,7 +452,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Какой вид работы Вы считаете самым интересным?"
+                    android:text="8. Какой вид работы Вы считаете самым интересным?"
             />
 
             <MultiAutoCompleteTextView

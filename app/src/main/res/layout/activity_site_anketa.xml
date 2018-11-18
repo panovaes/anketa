@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.example.anketa.SiteAnketa">
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+    >
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="1. Насколько сложно ориентироваться на нашем веб-сайте?"
+            />
+            <RadioGroup
+                    android:id="@+id/q1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+
+                <RadioButton
+                        android:id="@+id/q1_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень просто"
+                />
+                <RadioButton
+                        android:id="@+id/q1_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее просто"
+                />
+                <RadioButton
+                        android:id="@+id/q1_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нормально"
+                />
+                <RadioButton
+                        android:id="@+id/q1_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее сложно"
+                />
+                <RadioButton
+                        android:id="@+id/q1_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень сложно"
+                />
+
+
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="2. Насколько сложно найти на нашем веб-сайте нужную информацию?"
+            />
+            <RadioGroup
+                    android:id="@+id/q2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень просто"
+                />
+                <RadioButton
+                        android:id="@+id/q2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее просто"
+                />
+                <RadioButton
+                        android:id="@+id/q2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нормально"
+                />
+                <RadioButton
+                        android:id="@+id/q2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее сложно"
+                />
+                <RadioButton
+                        android:id="@+id/q2_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень сложно"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="3. В какой степени является информация на нашем веб-сайте понятной?"
+            />
+            <RadioGroup
+                    android:id="@+id/q3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q3_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Полностью понятна"
+                />
+                <RadioButton
+                        android:id="@+id/q3_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Понятна"
+                />
+                <RadioButton
+                        android:id="@+id/q3_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее понятна"
+                />
+                <RadioButton
+                        android:id="@+id/q3_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее непонятна"
+                />
+                <RadioButton
+                        android:id="@+id/q3_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Непонятна"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="4. Как Вы оцениваете внешний вид нашего веб-сайта?"
+            />
+            <RadioGroup
+                    android:id="@+id/q4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q4_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень хороший"
+                />
+                <RadioButton
+                        android:id="@+id/q4_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Хороший"
+                />
+                <RadioButton
+                        android:id="@+id/q4_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нормальный"
+                />
+                <RadioButton
+                        android:id="@+id/q4_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Плохой"
+                />
+                <RadioButton
+                        android:id="@+id/q4_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Мне он совсем не нравится"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="5. Как Вы оцениваете актуальность содержания на нашем веб-сайте?"
+            />
+            <RadioGroup
+                    android:id="@+id/q5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q5_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Актуальное"
+                />
+                <RadioButton
+                        android:id="@+id/q5_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее актуальное"
+                />
+                <RadioButton
+                        android:id="@+id/q5_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Не слишком актуальное"
+                />
+                <RadioButton
+                        android:id="@+id/q5_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Совсем не актуальное"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="6. Насколько сложно, по Вашему мнению, скачивание файлов с нашего веб-сайта?"
+            />
+            <RadioGroup
+                    android:id="@+id/q6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q6_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень просто"
+                />
+                <RadioButton
+                        android:id="@+id/q6_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее просто"
+                />
+                <RadioButton
+                        android:id="@+id/q6_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нормально"
+                />
+                <RadioButton
+                        android:id="@+id/q6_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее сложно"
+                />
+                <RadioButton
+                        android:id="@+id/q6_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень сложно"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="7. Насколько сложно было осуществление онлайн заказа на нашем веб-сайте?"
+            />
+            <RadioGroup
+                    android:id="@+id/q7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q7_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень просто"
+                />
+                <RadioButton
+                        android:id="@+id/q7_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее просто"
+                />
+                <RadioButton
+                        android:id="@+id/q7_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нормально"
+                />
+                <RadioButton
+                        android:id="@+id/q7_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее сложно"
+                />
+                <RadioButton
+                        android:id="@+id/q7_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень сложно"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="8. Насколько Вы доверяете онлайн процессу заказов на нашем веб-сайте?"
+            />
+            <RadioGroup
+                    android:id="@+id/q8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q8_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Безусловно"
+                />
+                <RadioButton
+                        android:id="@+id/q8_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень"
+                />
+                <RadioButton
+                        android:id="@+id/q8_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Нормально"
+                />
+                <RadioButton
+                        android:id="@+id/q8_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Я не считаю его слишком надежным"
+                />
+                <RadioButton
+                        android:id="@+id/q8_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Я совсем не доверяю ему"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="9. Насколько Вы в общем довольны нашим веб-сайтом?"
+            />
+            <RadioGroup
+                    android:id="@+id/q9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q9_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень доволен/льна"
+                />
+                <RadioButton
+                        android:id="@+id/q9_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Доволен/льна"
+                />
+                <RadioButton
+                        android:id="@+id/q9_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее доволен/льна"
+                />
+                <RadioButton
+                        android:id="@+id/q9_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="В среднем доволен/льна"
+                />
+                <RadioButton
+                        android:id="@+id/q9_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Скорее недоволен/льна"
+                />
+                <RadioButton
+                        android:id="@+id/q9_6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Недоволен/льна"
+                />
+                <RadioButton
+                        android:id="@+id/q9_7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Очень недоволен/льна"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:text="10. Вы бы рекомендовали наш веб-сайт другим людям?"
+            />
+            <RadioGroup
+                    android:id="@+id/q10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+            >
+                <RadioButton
+                        android:id="@+id/q10_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="	Несомненно да"
+                />
+                <RadioButton
+                        android:id="@+id/q10_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Вероятно да"
+                />
+                <RadioButton
+                        android:id="@+id/q10_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Я не знаю"
+                />
+                <RadioButton
+                        android:id="@+id/q10_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Вероятно нет"
+                />
+                <RadioButton
+                        android:id="@+id/q10_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Несомненно нет"
+                />
+            </RadioGroup>
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <EditText
+                    android:id="@+id/email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="E-MAIL"
+            />
+
+            <View android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:background="@android:color/darker_gray"
+                  android:layout_margin="15dp"
+            />
+
+
+            <Button
+                    android:id="@+id/success"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Завершить"
+                    android:onClick="submit"
+            />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>

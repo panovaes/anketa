@@ -20,6 +20,8 @@
         </activity>
         <activity android:name=".PetAnketa">
         </activity>
+        <activity android:name=".SiteAnketa">
+        </activity>
     </application>
 
 </manifest>

@@ -23,7 +23,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="У вас есть домашний питомец?"
+                    android:text="1. У вас есть домашний питомец?"
             />
 
             <RadioGroup
@@ -68,7 +68,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Какое животное, по Вашему мнению:"
+                    android:text="2. Какое животное, по Вашему мнению:"
             />
 
             <TextView
@@ -115,7 +115,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Ваше самое любимое животное :"
+                    android:text="3. Ваше самое любимое животное :"
             />
             <RadioGroup
                     android:id="@+id/q3"
@@ -173,7 +173,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Каким домашним любимцем Вы бы в будущем хотели обзавестись?"
+                    android:text="4. Каким домашним любимцем Вы бы в будущем хотели обзавестись?"
             />
             <EditText
                     android:id="@+id/q4"
@@ -192,7 +192,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Каким животным Вы бы никогда не обзавелись?"
+                    android:text="5. Каким животным Вы бы никогда не обзавелись?"
             />
             <EditText
                     android:id="@+id/q5"
@@ -211,7 +211,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Какая порода собак Ваша любимая?"
+                    android:text="6. Какая порода собак Ваша любимая?"
             />
             <EditText
                     android:id="@+id/q6"
@@ -230,7 +230,7 @@
                     android:layout_height="match_parent"
                     android:textStyle="bold"
                     android:textSize="18sp"
-                    android:text="Решая вопрос обзавестись ли домашним питомцем, Вы обсуждаете:"
+                    android:text="7. Решая вопрос обзавестись ли домашним питомцем, Вы обсуждаете:"
             />
 
             <CheckBox
