@@ -24,6 +24,8 @@
         </activity>
         <activity android:name=".CafeAnketa">
         </activity>
+        <activity android:name=".Statistic">
+        </activity>
     </application>
 
 </manifest>

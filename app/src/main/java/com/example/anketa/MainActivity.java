@@ -2,15 +2,10 @@ package com.example.anketa;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import com.example.anketa.db.DBHelper;
-
-import java.util.Arrays;
 
 
 
@@ -67,6 +62,18 @@ public class MainActivity extends Activity {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(MainActivity.this, CafeAnketa.class));
+            }
+        });
+
+
+        /**
+         * Просмотр статистики
+         */
+        Button statistic = findViewById(R.id.statistic);
+        statistic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(MainActivity.this, Statistic.class));
             }
         });
 
