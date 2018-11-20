@@ -2,9 +2,15 @@ package com.example.anketa;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import com.example.anketa.db.DBHelper;
+
+import java.util.Arrays;
 
 
 
@@ -63,5 +69,18 @@ public class MainActivity extends Activity {
                 startActivity(new Intent(MainActivity.this, CafeAnketa.class));
             }
         });
+
+
+        /**
+         * Инициализация БД
+         */
+        DBHelper db = DBHelper.create(this);
+    }
+
+
+    @Override
+    protected void onDestroy() {
+        DBHelper.getInstance().close();
+        super.onDestroy();
     }
 }

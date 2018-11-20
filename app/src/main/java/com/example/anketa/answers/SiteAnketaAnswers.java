@@ -4,6 +4,7 @@ package com.example.anketa.answers;
  * Ответы на анкеты сайта
  * */
 public class SiteAnketaAnswers {
+    public int id;
     public String q1;
     public String q2;
     public String q3;

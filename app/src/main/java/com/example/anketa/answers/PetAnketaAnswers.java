@@ -4,6 +4,7 @@ package com.example.anketa.answers;
  * Ответы на анкету питомцев
  * */
 public class PetAnketaAnswers {
+    public int id;
     public String q1;
     public String q2_1;
     public String q2_2;

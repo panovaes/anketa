@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 import com.example.anketa.answers.CafeAnketaAnswers;
+import com.example.anketa.db.DBHelper;
 
 import java.util.regex.Pattern;
 
@@ -131,6 +132,21 @@ public class CafeAnketa extends Activity {
 
 
         otvet.email = emailEdit.getText().toString().trim();
+
+        DBHelper.getInstance().insertCafeAnketa(otvet);
+
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this)
+                .setTitle("Сообщение")
+                .setMessage("Анкета сохранена")
+                .setCancelable(false)
+                .setPositiveButton("Ок", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        CafeAnketa.this.finish();
+                    }
+                });
+
+        dialog.show();
     }
 
 

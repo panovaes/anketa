@@ -4,6 +4,7 @@ package com.example.anketa.answers;
  * Ответы на анкету поиска работы
  * */
 public class WorkAnketaAnswers {
+    public int id;
     public String first;
     public String second;
     public String third;

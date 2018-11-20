@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import com.example.anketa.answers.SiteAnketaAnswers;
+import com.example.anketa.db.DBHelper;
 
 import java.util.regex.Pattern;
 
@@ -189,6 +190,22 @@ public class SiteAnketa extends Activity {
 
 
         otvet.email = emailEdit.getText().toString().trim();
+
+
+        DBHelper.getInstance().insertSiteAnketa(otvet);
+
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this)
+                .setTitle("Сообщение")
+                .setMessage("Анкета сохранена")
+                .setCancelable(false)
+                .setPositiveButton("Ок", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        SiteAnketa.this.finish();
+                    }
+                });
+
+        dialog.show();
     }
 
 

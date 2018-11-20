@@ -4,6 +4,7 @@ package com.example.anketa.answers;
  * Ответы на анкету кафе
  * */
 public class CafeAnketaAnswers {
+    public int id;
     public String q1;
     public float q2_1;
     public float q2_2;

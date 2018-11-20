@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.*;
 import com.example.anketa.answers.WorkAnketaAnswers;
+import com.example.anketa.db.DBHelper;
 
 import java.util.ArrayList;
 import java.util.regex.Pattern;
@@ -125,7 +126,7 @@ public class WorkAnketa extends Activity {
             return;
         }
 
-        otvet.fifth = getText(five_question, firstRadioButtonID);
+        otvet.fifth = getText(five_question, fiveRadioButtonId);
 
 
 
@@ -180,6 +181,21 @@ public class WorkAnketa extends Activity {
 
 
         otvet.email = emailEdit.getText().toString().trim();
+
+        DBHelper.getInstance().insertWorkAnketa(otvet);
+
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this)
+                .setTitle("Сообщение")
+                .setMessage("Анкета сохранена")
+                .setCancelable(false)
+                .setPositiveButton("Ок", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        WorkAnketa.this.finish();
+                    }
+                });
+
+        dialog.show();
     }
 
 

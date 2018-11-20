@@ -10,6 +10,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import com.example.anketa.answers.PetAnketaAnswers;
+import com.example.anketa.db.DBHelper;
 
 import java.util.ArrayList;
 import java.util.regex.Pattern;
@@ -168,6 +169,22 @@ public class PetAnketa extends Activity {
 
 
         otvet.email = emailEdit.getText().toString().trim();
+
+
+        DBHelper.getInstance().insertPetAnketa(otvet);
+
+        AlertDialog.Builder dialog = new AlertDialog.Builder(this)
+                .setTitle("Сообщение")
+                .setMessage("Анкета сохранена")
+                .setCancelable(false)
+                .setPositiveButton("Ок", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        PetAnketa.this.finish();
+                    }
+                });
+
+        dialog.show();
     }
 
 
