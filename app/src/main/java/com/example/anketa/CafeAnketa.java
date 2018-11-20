@@ -133,7 +133,7 @@ public class CafeAnketa extends Activity {
 
         otvet.email = emailEdit.getText().toString().trim();
 
-        DBHelper.getInstance().insertCafeAnketa(otvet);
+        DBHelper.getInstance().insertAnketa(otvet);
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(this)
                 .setTitle("Сообщение")

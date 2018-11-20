@@ -123,7 +123,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public void insertCafeAnketa(CafeAnketaAnswers answers) {
+    public void insertAnketa(CafeAnketaAnswers answers) {
         ContentValues data = new ContentValues();
         data.put("q1", answers.q1);
         data.put("q2_1", answers.q2_1);
@@ -142,7 +142,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public void insertPetAnketa(PetAnketaAnswers answers) {
+    public void insertAnketa(PetAnketaAnswers answers) {
         ContentValues data = new ContentValues();
         data.put("q1", answers.q1);
         data.put("q2_1", answers.q2_1);
@@ -159,7 +159,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public void insertSiteAnketa(SiteAnketaAnswers answers) {
+    public void insertAnketa(SiteAnketaAnswers answers) {
         ContentValues data = new ContentValues();
         data.put("q1", answers.q1);
         data.put("q2", answers.q2);
@@ -177,7 +177,7 @@ public class DBHelper extends SQLiteOpenHelper {
     }
 
 
-    public void insertWorkAnketa(WorkAnketaAnswers answers) {
+    public void insertAnketa(WorkAnketaAnswers answers) {
         ContentValues data = new ContentValues();
         data.put("q1", answers.first);
         data.put("q2", answers.second);

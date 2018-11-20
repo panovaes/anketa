@@ -3,8 +3,7 @@ package com.example.anketa.answers;
 /**
  * Ответы на анкету кафе
  * */
-public class CafeAnketaAnswers {
-    public int id;
+public class CafeAnketaAnswers extends Anketa {
     public String q1;
     public float q2_1;
     public float q2_2;
@@ -16,5 +15,4 @@ public class CafeAnketaAnswers {
     public String q5;
     public String q6;
     public String q7;
-    public String email;
 }

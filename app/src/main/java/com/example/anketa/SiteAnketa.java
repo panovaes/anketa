@@ -192,7 +192,7 @@ public class SiteAnketa extends Activity {
         otvet.email = emailEdit.getText().toString().trim();
 
 
-        DBHelper.getInstance().insertSiteAnketa(otvet);
+        DBHelper.getInstance().insertAnketa(otvet);
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(this)
                 .setTitle("Сообщение")

@@ -182,7 +182,7 @@ public class WorkAnketa extends Activity {
 
         otvet.email = emailEdit.getText().toString().trim();
 
-        DBHelper.getInstance().insertWorkAnketa(otvet);
+        DBHelper.getInstance().insertAnketa(otvet);
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(this)
                 .setTitle("Сообщение")
