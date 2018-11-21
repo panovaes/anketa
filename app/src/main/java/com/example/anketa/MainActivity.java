@@ -67,21 +67,65 @@ public class MainActivity extends Activity {
 
 
         /**
-         * Просмотр статистики
+         * Просмотр статистики Кафе
          */
-        Button statistic = findViewById(R.id.statistic);
-        statistic.setOnClickListener(new View.OnClickListener() {
+        Button statisticCafe = findViewById(R.id.statisticCafe);
+        statisticCafe.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, Statistic.class));
+                showStatistics("CAFE");
             }
         });
+
+
+        /**
+         * Просмотр статистики Поиска работы
+         */
+        Button statisticWork = findViewById(R.id.statisticWork);
+        statisticWork.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showStatistics("WORK");
+            }
+        });
+
+
+        /**
+         * Просмотр статистики Веб сайта
+         */
+        Button statisticSite = findViewById(R.id.statisticSite);
+        statisticSite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showStatistics("SITE");
+            }
+        });
+
+
+        /**
+         * Просмотр статистики Питомцев
+         */
+        Button statisticPet = findViewById(R.id.statisticPet);
+        statisticPet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                showStatistics("PET");
+            }
+        });
+
 
 
         /**
          * Инициализация БД
          */
         DBHelper db = DBHelper.create(this);
+    }
+
+
+    private void showStatistics(String anketaType) {
+        Intent intent = new Intent(MainActivity.this, StatisticsActivity.class);
+        intent.putExtra("ANKETA_TYPE", anketaType);
+        startActivity(intent);
     }
 
 

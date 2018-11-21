@@ -12,69 +12,96 @@
             android:layout_height="match_parent"
     >
 
-        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical">
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
             <TableLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:columnCount="2"
-                    android:stretchColumns="*"
-            >
-
-                <TableRow android:padding="5dp"
+                    android:layout_height="wrap_content"
+                    android:stretchColumns="*">
+                <TableRow android:paddingTop="5dp"
+                          android:paddingBottom="0dp"
                           android:layout_width="match_parent"
                           android:layout_height="match_parent">
 
-                    <Button
-                            android:id="@+id/anketa_work"
-                            android:layout_width="match_parent"
+                    <Button android:id="@+id/anketa_work"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawableTop="@drawable/worker"
-                            android:text="поиск работы" />
-
-
-                    <Button
-                            android:id="@+id/anketa_cafe"
-                            android:layout_width="match_parent"
+                            android:text="Работа"
+                    />
+                    <Button android:id="@+id/anketa_cafe"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:drawableTop="@drawable/martini"
-                            android:text="Оценка кафе" />
+                            android:text="Кафе"/>
 
                 </TableRow>
-
-
-                <TableRow android:padding="5dp"
+                <TableRow android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+                    <Button
+                            android:id="@+id/statisticWork"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Статистика"
+                    />
+                    <Button
+                            android:id="@+id/statisticCafe"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Статистика"
+                    />
+                </TableRow>
+                <TableRow>
+                    <View android:layout_width="match_parent"
+                          android:layout_height="1dp"
+                          android:background="@android:color/darker_gray"
+                          android:layout_marginTop="15dp"
+                          android:layout_marginBottom="10dp"
+                          android:layout_marginRight="5dp"
+                          android:layout_marginLeft="5dp"
+                          android:layout_span="2"
+                    />
+                </TableRow>
+                <TableRow android:paddingTop="5dp"
+                          android:paddingBottom="0dp"
                           android:layout_width="match_parent"
                           android:layout_height="match_parent">
 
                     <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/anketa_site"
                             android:drawableTop="@drawable/site"
-                            android:text="Оценка веб-сайта" />
-
+                            android:text="Оценка сайта"/>
                     <Button
-                            android:layout_width="match_parent"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:id="@+id/anketa_pet"
                             android:drawableTop="@drawable/cat"
                             android:textAlignment="center"
                             android:text="питомцы"
                             android:gravity="left|center_vertical"/>
-
                 </TableRow>
-
-
+                <TableRow android:layout_width="wrap_content"
+                          android:layout_height="wrap_content">
+                    <Button
+                            android:id="@+id/statisticSite"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Статистика"
+                    />
+                    <Button
+                            android:id="@+id/statisticPet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Статистика"
+                    />
+                </TableRow>
             </TableLayout>
 
-            <Button
-                    android:id="@+id/statistic"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="10dp"
-                    android:text="Статистика"
-                    android:onClick="statistic"
-            />
         </LinearLayout>
 
 
