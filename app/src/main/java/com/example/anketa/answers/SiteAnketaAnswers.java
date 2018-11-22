@@ -1,6 +1,5 @@
 package com.example.anketa.answers;
 
-import com.example.anketa.SiteAnketa;
 import com.github.mikephil.charting.data.BarEntry;
 
 import java.util.*;
@@ -13,34 +12,21 @@ import java.util.*;
  * Ответы на анкеты сайта
  * */
 public class SiteAnketaAnswers extends Anketa {
-    public String q1;
-    public String q2;
-    public String q3;
-    public String q4;
-    public String q5;
-    public String q6;
-    public String q7;
-    public String q8;
-    public String q9;
-    public String q10;
-
-
     private static final Map<Integer, String> queryTitles = new HashMap<>();
+    private static final Map<Integer, List<String>> queryVarian = new HashMap<>();
 
     static {
-        queryTitles.put(1,  "Вопрос 1");
-        queryTitles.put(2,  "Вопрос 2");
-        queryTitles.put(3,  "Вопрос 3");
-        queryTitles.put(4,  "Вопрос 4");
-        queryTitles.put(5,  "Вопрос 5");
-        queryTitles.put(6,  "Вопрос 6");
-        queryTitles.put(7,  "Вопрос 7");
-        queryTitles.put(8,  "Вопрос 8");
-        queryTitles.put(9,  "Вопрос 9");
+        queryTitles.put(1, "Вопрос 1");
+        queryTitles.put(2, "Вопрос 2");
+        queryTitles.put(3, "Вопрос 3");
+        queryTitles.put(4, "Вопрос 4");
+        queryTitles.put(5, "Вопрос 5");
+        queryTitles.put(6, "Вопрос 6");
+        queryTitles.put(7, "Вопрос 7");
+        queryTitles.put(8, "Вопрос 8");
+        queryTitles.put(9, "Вопрос 9");
         queryTitles.put(10, "Вопрос 10");
     }
-
-    private static final Map<Integer, List<String>> queryVarian = new HashMap<>();
 
     static {
         queryVarian.put(1, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
@@ -55,17 +41,22 @@ public class SiteAnketaAnswers extends Anketa {
         queryVarian.put(10, Arrays.asList("Несомненно да", "Вероятно да", "Я не знаю", "Вероятно нет", "Несомненно нет"));
     }
 
+    public String q1;
+    public String q2;
+    public String q3;
+    public String q4;
+    public String q5;
+    public String q6;
+    public String q7;
+    public String q8;
+    public String q9;
+    public String q10;
+
+
     public List<String> getAnswerChoices(int queryNum) {
         return queryVarian.get(queryNum);
     }
 
-
-    private void increment(Map<String, Integer> data, String key) {
-        if (!data.containsKey(key))
-            return;
-
-        data.put(key, data.get(key) + 1);
-    }
 
 
     @Override

@@ -2,7 +2,7 @@ package com.example.anketa.answers;
 
 import com.github.mikephil.charting.data.BarEntry;
 
-import java.util.List;
+import java.util.*;
 
 
 
@@ -23,27 +23,76 @@ public class PetAnketaAnswers extends Anketa {
     public String q7;
 
 
+    private static final Map<Integer, String> queryTitles = new HashMap<>();
+
+    static {
+        queryTitles.put(1,  "Вопрос 1");
+        queryTitles.put(2,  "Вопрос 3");
+    }
+
+
+    private static final Map<Integer, List<String>> queryVarian = new HashMap<>();
+
+    static {
+        queryVarian.put(1, Arrays.asList("Нет"));
+        queryVarian.put(2, Arrays.asList("Собака", "Кошка", "Попугай", "Пони", "Хомяк"));
+    }
+
+
     public List<String> getAnswerChoices(int queryNum) {
-        return null;
+        return queryVarian.get(queryNum);
     }
 
 
-    public List<Object> getAnswer(int queryNum) {
-        return null;
-    }
+    @Override
+    public List<BarEntry> getAnswer(int queryNum, List<Anketa> data) {
+        List<BarEntry> result = new ArrayList<>();
 
+        switch (queryNum) {
+            case 1:
+                int noCount = 0;
+                int otherCount = 0;
 
-    @Override public List<BarEntry> getAnswer(int queryNum, List<Anketa> data) {
-        return null;
+                for (Anketa anketa : data) {
+                    PetAnketaAnswers answer = (PetAnketaAnswers) anketa;
+                    if (answer.q1.equals("Нет"))
+                        noCount++;
+                    else otherCount++;
+                }
+
+                result.add(new BarEntry(0, noCount, "Нет"));
+                result.add(new BarEntry(1, otherCount, "Да"));
+                break;
+
+            case 2:
+                Map<String, Integer> statistic = new HashMap<>();
+                for (String key : getAnswerChoices(queryNum)) {
+                    statistic.put(key, 0);
+                }
+
+                for (Anketa anketa : data) {
+                    PetAnketaAnswers answer = (PetAnketaAnswers) anketa;
+                    increment(statistic, answer.q3);
+                }
+
+                for (int i = 0; i < getAnswerChoices(queryNum).size(); i++) {
+                    String key = getAnswerChoices(queryNum).get(i);
+                    result.add(new BarEntry(i, statistic.get(key), key));
+                }
+                break;
+        }
+
+        return result;
     }
 
 
     @Override public int getAnswerCount() {
-        return 0;
+        return queryTitles.size();
     }
 
 
-    @Override public String getQueryTitle(int queryNum) {
-        return null;
+    @Override
+    public String getQueryTitle(int queryNum) {
+        return queryTitles.get(queryNum);
     }
 }

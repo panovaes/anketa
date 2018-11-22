@@ -88,6 +88,13 @@ public abstract class Anketa {
     }
 
 
+    protected void increment(Map<String, Integer> data, String key) {
+        if (!data.containsKey(key))
+            return;
+
+        data.put(key, data.get(key) + 1);
+    }
+
     public abstract List<BarEntry> getAnswer(int queryNum, List<Anketa> data);
 
     public abstract int getAnswerCount();
