@@ -504,7 +504,7 @@
                         android:id="@+id/q10_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="	Несомненно да"
+                        android:text="Несомненно да"
                 />
                 <RadioButton
                         android:id="@+id/q10_2"

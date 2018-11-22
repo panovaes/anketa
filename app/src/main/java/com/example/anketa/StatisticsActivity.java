@@ -139,52 +139,7 @@ public class StatisticsActivity extends Activity implements ActionBar.TabListene
             Utils.init(rootView.getContext());
 
             try {
-                List<String> labels = Anketa.getAnswers(ANKETA_TYPE, queryNum);
-                Map<String, Integer> dataString = new HashMap<>();
-                Map<Float, Integer> dataFloat = new HashMap<>();
-
-                for (String label : labels) {
-                    dataString.put(label, 0);
-                }
-
-                List<BarEntry> entries = new ArrayList<>();
-
-                for (Anketa answer : answers) {
-                    List<Object> ans = answer.getAnswer(queryNum);
-                    if (ans.size() == 1) {
-                        Object o = ans.get(0);
-                        if (o instanceof Float) {
-                            float value = (float) o;
-                            if (dataFloat.containsKey(value)) {
-                                dataFloat.put(value, dataFloat.get(value) + 1);
-                            } else {
-                                dataFloat.put(value, 1);
-                            }
-                        } else {
-                            String oString = String.valueOf(o);
-                            if (dataString.containsKey(oString)) {
-                                dataString.put(oString, dataString.get(oString) + 1);
-                            } else {
-                                dataString.put(oString, 1);
-                            }
-                        }
-                    } else {
-                        Log.e("E", "IGNORE");
-                    }
-                }
-
-                int i = 0;
-                for (String key : dataString.keySet()) {
-                    entries.add(new BarEntry(i, dataString.get(key), key));
-                    i++;
-                }
-
-                for (Float key : dataFloat.keySet()) {
-                    entries.add(new BarEntry(i, dataFloat.get(key), key));
-                    i++;
-                }
-
-                BarDataSet set = new BarDataSet(entries, "Варианты ответов");
+                BarDataSet set = new BarDataSet(Anketa.getAnswers(ANKETA_TYPE, queryNum, answers), "Варианты ответов");
 
                 set.setColors(ColorTemplate.COLORFUL_COLORS);
 
@@ -226,26 +181,13 @@ public class StatisticsActivity extends Activity implements ActionBar.TabListene
 
         @Override
         public int getCount() {
-            switch (ANKETA_TYPE) {
-                case "WORK":
-                    return 8;
-
-                case "CAFE":
-                    return 5;
-
-                case "SITE":
-                    return 10;
-
-                case "PET":
-                    return 7;
-            }
-            return 0;
+            return Anketa.getAnswerCount(ANKETA_TYPE);
         }
 
 
         @Override
         public CharSequence getPageTitle(int position) {
-            return "Вопрос " + (position + 1);
+            return Anketa.getQueryTitlte(ANKETA_TYPE, position + 1);
         }
     }
 }

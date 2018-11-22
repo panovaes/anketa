@@ -1,5 +1,6 @@
 package com.example.anketa.answers;
 import android.database.Cursor;
+import com.github.mikephil.charting.data.BarEntry;
 
 import java.util.HashMap;
 import java.util.List;
@@ -87,10 +88,13 @@ public abstract class Anketa {
     }
 
 
+    public abstract List<BarEntry> getAnswer(int queryNum, List<Anketa> data);
+
+    public abstract int getAnswerCount();
+
+    public abstract String getQueryTitle(int queryNum);
+
     public abstract List<String> getAnswerChoices(int queryNum);
-
-    public abstract List<Object> getAnswer(int queryNum);
-
 
     private static final Map<String, Anketa> EMPTY_ANKETS = new HashMap<>();
 
@@ -101,8 +105,17 @@ public abstract class Anketa {
         EMPTY_ANKETS.put("PET", new PetAnketaAnswers());
     }
 
-    public static List<String> getAnswers(String anketa_type, int queryNum) {
-        return EMPTY_ANKETS.get(anketa_type).getAnswerChoices(queryNum);
+    public static List<BarEntry> getAnswers(String anketa_type, int queryNum, List<Anketa> data) {
+        return EMPTY_ANKETS.get(anketa_type).getAnswer(queryNum, data);
+    }
+
+
+    public static int getAnswerCount(String anketa_type) {
+        return EMPTY_ANKETS.get(anketa_type).getAnswerCount();
+    }
+
+    public static String getQueryTitlte(String anketa_type, int queryNum) {
+        return EMPTY_ANKETS.get(anketa_type).getQueryTitle(queryNum);
     }
 
 }

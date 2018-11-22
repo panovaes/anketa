@@ -1,5 +1,7 @@
 package com.example.anketa.answers;
 
+import com.github.mikephil.charting.data.BarEntry;
+
 import java.util.List;
 
 
@@ -21,13 +23,27 @@ public class PetAnketaAnswers extends Anketa {
     public String q7;
 
 
-    @Override
     public List<String> getAnswerChoices(int queryNum) {
         return null;
     }
 
 
-    @Override public List<Object> getAnswer(int queryNum) {
+    public List<Object> getAnswer(int queryNum) {
+        return null;
+    }
+
+
+    @Override public List<BarEntry> getAnswer(int queryNum, List<Anketa> data) {
+        return null;
+    }
+
+
+    @Override public int getAnswerCount() {
+        return 0;
+    }
+
+
+    @Override public String getQueryTitle(int queryNum) {
         return null;
     }
 }
