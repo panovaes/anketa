@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.*;
 import com.example.anketa.answers.CafeAnketaAnswers;
 import com.example.anketa.db.DBHelper;
+import com.example.anketa.report.AnketaReport;
 
 import java.util.regex.Pattern;
 
@@ -134,6 +135,8 @@ public class CafeAnketa extends Activity {
         otvet.email = emailEdit.getText().toString().trim();
 
         DBHelper.getInstance().insertAnketa(otvet);
+
+        AnketaReport.sendTo(otvet.email, "Благодарность", AnketaReport.createThank("Оценка кафе"));
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(this)
                 .setTitle("Сообщение")

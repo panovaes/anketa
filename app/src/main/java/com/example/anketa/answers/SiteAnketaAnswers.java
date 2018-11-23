@@ -13,7 +13,7 @@ import java.util.*;
  * */
 public class SiteAnketaAnswers extends Anketa {
     private static final Map<Integer, String> queryTitles = new HashMap<>();
-    private static final Map<Integer, List<String>> queryVarian = new HashMap<>();
+    private static final Map<Integer, List<String>> queryVariant = new HashMap<>();
 
     static {
         queryTitles.put(1, "Вопрос 1");
@@ -29,16 +29,16 @@ public class SiteAnketaAnswers extends Anketa {
     }
 
     static {
-        queryVarian.put(1, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
-        queryVarian.put(2, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
-        queryVarian.put(3, Arrays.asList("Полностью понятна", "Понятна", "Скорее понятна", "Скорее непонятна", "Непонятна"));
-        queryVarian.put(4, Arrays.asList("Очень хороший", "Хороший", "Нормальный", "Плохой", "Мне он совсем не нравится"));
-        queryVarian.put(5, Arrays.asList("Актуальное", "Скорее актуальное", "Не слишком актуальное", "Совсем не актуальное"));
-        queryVarian.put(6, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
-        queryVarian.put(7, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
-        queryVarian.put(8, Arrays.asList("Безусловно", "Очень", "Нормально", "Я не считаю его слишком надежным", "Я совсем не доверяю ему"));
-        queryVarian.put(9, Arrays.asList("Очень доволен/льна", "Доволен/льна", "Скорее доволен/льна", "В среднем доволен/льна", "Скорее недоволен/льна", "Недоволен/льна", "Очень недоволен/льна"));
-        queryVarian.put(10, Arrays.asList("Несомненно да", "Вероятно да", "Я не знаю", "Вероятно нет", "Несомненно нет"));
+        queryVariant.put(1, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
+        queryVariant.put(2, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
+        queryVariant.put(3, Arrays.asList("Полностью понятна", "Понятна", "Скорее понятна", "Скорее непонятна", "Непонятна"));
+        queryVariant.put(4, Arrays.asList("Очень хороший", "Хороший", "Нормальный", "Плохой", "Мне он совсем не нравится"));
+        queryVariant.put(5, Arrays.asList("Актуальное", "Скорее актуальное", "Не слишком актуальное", "Совсем не актуальное"));
+        queryVariant.put(6, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
+        queryVariant.put(7, Arrays.asList("Очень просто", "Скорее просто", "Нормально", "Скорее сложно", "Очень сложно"));
+        queryVariant.put(8, Arrays.asList("Безусловно", "Очень", "Нормально", "Я не считаю его слишком надежным", "Я совсем не доверяю ему"));
+        queryVariant.put(9, Arrays.asList("Очень доволен/льна", "Доволен/льна", "Скорее доволен/льна", "В среднем доволен/льна", "Скорее недоволен/льна", "Недоволен/льна", "Очень недоволен/льна"));
+        queryVariant.put(10, Arrays.asList("Несомненно да", "Вероятно да", "Я не знаю", "Вероятно нет", "Несомненно нет"));
     }
 
     public String q1;
@@ -54,7 +54,7 @@ public class SiteAnketaAnswers extends Anketa {
 
 
     public List<String> getAnswerChoices(int queryNum) {
-        return queryVarian.get(queryNum);
+        return queryVariant.get(queryNum);
     }
 
 

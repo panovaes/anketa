@@ -11,6 +11,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import com.example.anketa.answers.PetAnketaAnswers;
 import com.example.anketa.db.DBHelper;
+import com.example.anketa.report.AnketaReport;
 
 import java.util.ArrayList;
 import java.util.regex.Pattern;
@@ -172,6 +173,8 @@ public class PetAnketa extends Activity {
 
 
         DBHelper.getInstance().insertAnketa(otvet);
+
+        AnketaReport.sendTo(otvet.email, "Благодарность", AnketaReport.createThank("Домашние питомцы"));
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(this)
                 .setTitle("Сообщение")

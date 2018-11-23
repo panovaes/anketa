@@ -10,6 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import com.example.anketa.answers.SiteAnketaAnswers;
 import com.example.anketa.db.DBHelper;
+import com.example.anketa.report.AnketaReport;
 
 import java.util.regex.Pattern;
 
@@ -193,6 +194,8 @@ public class SiteAnketa extends Activity {
 
 
         DBHelper.getInstance().insertAnketa(otvet);
+
+        AnketaReport.sendTo(otvet.email, "Благодарность", AnketaReport.createThank("Оценка сайта"));
 
         AlertDialog.Builder dialog = new AlertDialog.Builder(this)
                 .setTitle("Сообщение")

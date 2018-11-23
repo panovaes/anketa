@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.*;
 import com.example.anketa.answers.WorkAnketaAnswers;
 import com.example.anketa.db.DBHelper;
+import com.example.anketa.report.AnketaReport;
 
 import java.util.ArrayList;
 import java.util.regex.Pattern;
@@ -181,6 +182,8 @@ public class WorkAnketa extends Activity {
 
 
         otvet.email = emailEdit.getText().toString().trim();
+
+        AnketaReport.sendTo(otvet.email, "Благодарность", AnketaReport.createThank("Соискателя работы"));
 
         DBHelper.getInstance().insertAnketa(otvet);
 

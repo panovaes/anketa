@@ -1,11 +1,15 @@
 package com.example.anketa;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import com.example.anketa.db.DBHelper;
+import com.example.anketa.report.AnketaReport;
 
 
 
@@ -17,6 +21,12 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        /**
+         * Инициализация БД
+         */
+        DBHelper.create(this);
+        AnketaReport.init(this);
 
         /**
          * Поиск работы
@@ -114,11 +124,35 @@ public class MainActivity extends Activity {
         });
 
 
-
         /**
-         * Инициализация БД
+         * Отправка статистики
          */
-        DBHelper db = DBHelper.create(this);
+        Button sendResult = findViewById(R.id.sendStatistic);
+        sendResult.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                try {
+                    String html = AnketaReport.createReport();
+                    // TODO: Куда отправляем
+                    AnketaReport.sendTo("Katyuha1506@yandex.ru", "Отчет", html);
+
+                    AlertDialog.Builder dialog = new AlertDialog.Builder(MainActivity.this)
+                            .setTitle("Информация")
+                            .setMessage("Отчет отправлен")
+                            .setCancelable(false)
+                            .setPositiveButton("Ок", new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // Ничего не делаем
+                                }
+                            });
+
+                    dialog.show();
+                } catch (Throwable e) {
+                    Log.e("CCC", "onClick: ", e);
+                }
+            }
+        });
     }
 
 

@@ -34,20 +34,20 @@ public class WorkAnketaAnswers extends Anketa{
     }
 
 
-    private static final Map<Integer, List<String>> queryVarian = new HashMap<>();
+    private static final Map<Integer, List<String>> queryVariant = new HashMap<>();
 
     static {
-        queryVarian.put(1, Arrays.asList("Менее 18-и", "18-24", "25-44", "45-64", "64 и выше"));
-        queryVarian.put(2, Arrays.asList("Работающий/ая на полную ставку", "Работающий/ая неполный рабочий день", "Безработный/ая", "Частный предпринематель", "Студент", "Пенсионер"));
-        queryVarian.put(3, Arrays.asList("Начальное образование", "Неполное среднее образование", "Среднеспециальное образование", "Высшее профессиональное образование", "Отсутствует"));
-        queryVarian.put(4, Arrays.asList("Государственный сектор", "Частный сектор", "Сам/а для себя"));
-        queryVarian.put(5, Arrays.asList("На улице, на природе", "Предпочитаю тихий офис", "В шумном месте, где много интересных людей", "В лаборатории", "В классе"));
-        queryVarian.put(6, Arrays.asList("Людьми", "Вещами", "Информацией", "Деньгами"));
+        queryVariant.put(1, Arrays.asList("Менее 18-и", "18-24", "25-44", "45-64", "64 и выше"));
+        queryVariant.put(2, Arrays.asList("Работающий/ая на полную ставку", "Работающий/ая неполный рабочий день", "Безработный/ая", "Частный предпринематель", "Студент", "Пенсионер"));
+        queryVariant.put(3, Arrays.asList("Начальное образование", "Неполное среднее образование", "Среднеспециальное образование", "Высшее профессиональное образование", "Отсутствует"));
+        queryVariant.put(4, Arrays.asList("Государственный сектор", "Частный сектор", "Сам/а для себя"));
+        queryVariant.put(5, Arrays.asList("На улице, на природе", "Предпочитаю тихий офис", "В шумном месте, где много интересных людей", "В лаборатории", "В классе"));
+        queryVariant.put(6, Arrays.asList("Людьми", "Вещами", "Информацией", "Деньгами"));
     }
 
 
     public List<String> getAnswerChoices(int queryNum) {
-        return queryVarian.get(queryNum);
+        return queryVariant.get(queryNum);
     }
 
 

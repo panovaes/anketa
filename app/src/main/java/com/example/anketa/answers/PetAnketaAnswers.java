@@ -31,16 +31,16 @@ public class PetAnketaAnswers extends Anketa {
     }
 
 
-    private static final Map<Integer, List<String>> queryVarian = new HashMap<>();
+    private static final Map<Integer, List<String>> queryVariant = new HashMap<>();
 
     static {
-        queryVarian.put(1, Arrays.asList("Нет"));
-        queryVarian.put(2, Arrays.asList("Собака", "Кошка", "Попугай", "Пони", "Хомяк"));
+        queryVariant.put(1, Arrays.asList("Нет"));
+        queryVariant.put(2, Arrays.asList("Собака", "Кошка", "Попугай", "Пони", "Хомяк"));
     }
 
 
     public List<String> getAnswerChoices(int queryNum) {
-        return queryVarian.get(queryNum);
+        return queryVariant.get(queryNum);
     }
 
 
