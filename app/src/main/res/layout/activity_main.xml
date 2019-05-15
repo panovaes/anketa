@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="horizontal"
-        tools:context="com.example.anketa.MainActivity">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:background="#eeeeee"
+    tools:context="com.example.anketa.MainActivity">
 
     <ScrollView
             android:layout_width="match_parent"
@@ -15,117 +16,309 @@
         <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:padding="16dp"
                 android:orientation="vertical">
 
-            <TableLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:stretchColumns="*">
-                <TableRow android:paddingTop="5dp"
-                          android:paddingBottom="0dp"
-                          android:layout_width="match_parent"
-                          android:layout_height="match_parent">
 
-                    <Button android:id="@+id/anketa_work"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawableTop="@drawable/worker"
-                            android:text="Работа"
-                    />
-                    <Button android:id="@+id/anketa_cafe"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:drawableTop="@drawable/martini"
-                            android:text="Кафе"/>
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="16dp"
+                >
 
-                </TableRow>
-                <TableRow android:layout_width="wrap_content"
-                          android:layout_height="wrap_content">
-                    <Button
-                            android:id="@+id/statisticWork"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Статистика"
-                    />
-                    <Button
-                            android:id="@+id/statisticCafe"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Статистика"
-                    />
-                </TableRow>
-                <TableRow>
-                    <View android:layout_width="match_parent"
-                          android:layout_height="1dp"
-                          android:background="@android:color/darker_gray"
-                          android:layout_marginTop="15dp"
-                          android:layout_marginBottom="10dp"
-                          android:layout_marginRight="5dp"
-                          android:layout_marginLeft="5dp"
-                          android:layout_span="2"
-                    />
-                </TableRow>
-                <TableRow android:paddingTop="5dp"
-                          android:paddingBottom="0dp"
-                          android:layout_width="match_parent"
-                          android:layout_height="match_parent">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
 
-                    <Button
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/anketa_site"
-                            android:drawableTop="@drawable/site"
-                            android:text="Оценка сайта"/>
-                    <Button
+                            android:src="@drawable/ic_baseline_work_24px"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Анкета для соискателя работы"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textFontWeight="500"
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="ЗАПУСК"
+                            android:background="#ffffff"
+                            android:textColor="#4a148c"
+                            android:padding="0dp"
+                            android:textFontWeight="500"
+                            />
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="СТАТИСТИКА"
+                            android:background="#ffffff"
+                            android:textColor="#4a148c"
+                            android:padding="0dp"
+                            android:textFontWeight="500"
+                            android:paddingStart="32dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:id="@+id/anketa_pet"
-                            android:drawableTop="@drawable/cat"
-                            android:textAlignment="center"
-                            android:text="питомцы"
-                            android:gravity="left|center_vertical"/>
-                </TableRow>
-                <TableRow android:layout_width="wrap_content"
-                          android:layout_height="wrap_content">
-                    <Button
-                            android:id="@+id/statisticSite"
+                            android:src="@drawable/ic_baseline_local_cafe_24px"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Анкета оценки кафе"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textFontWeight="500"
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="ЗАПУСК"
+                            android:background="#ffffff"
+                            android:textColor="#4a148c"
+                            android:padding="0dp"
+                            android:textFontWeight="500"
+                            />
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="СТАТИСТИКА"
+                            android:background="#ffffff"
+                            android:textColor="#4a148c"
+                            android:padding="0dp"
+                            android:textFontWeight="500"
+                            android:paddingStart="32dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Статистика"
-                    />
-                    <Button
-                            android:id="@+id/statisticPet"
+                            android:src="@drawable/ic_baseline_computer_24px"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Анкета оценки сайта"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textFontWeight="500"
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="ЗАПУСК"
+                            android:background="#ffffff"
+                            android:textColor="#4a148c"
+                            android:padding="0dp"
+                            android:textFontWeight="500"
+                            />
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="СТАТИСТИКА"
+                            android:background="#ffffff"
+                            android:textColor="#4a148c"
+                            android:padding="0dp"
+                            android:textFontWeight="500"
+                            android:paddingStart="32dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                card_view:cardCornerRadius="4dp"
+                card_view:contentPadding="16dp"
+                android:layout_marginTop="16dp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Статистика"
-                    />
-                </TableRow>
-                <TableRow>
-                    <View android:layout_width="match_parent"
-                          android:layout_height="1dp"
-                          android:background="@android:color/darker_gray"
-                          android:layout_marginTop="15dp"
-                          android:layout_marginBottom="10dp"
-                          android:layout_marginRight="5dp"
-                          android:layout_marginLeft="5dp"
-                          android:layout_span="2"
-                    />
-                </TableRow>
-                <TableRow>
-                    <Button
-                            android:id="@+id/sendStatistic"
-                            android:layout_width="match_parent"
-                            android:layout_marginBottom="10dp"
-                            android:layout_span="2"
-                            android:text="Отправить результаты"
-                    />
-                </TableRow>
-            </TableLayout>
+                            android:src="@drawable/ic_baseline_pets_24px"
+                            />
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:text="Анкета домашних питомцев"
+                            android:textSize="18dp"
+                            android:textColor="#000000"
+                            android:textFontWeight="500"
+                            >
+                        </TextView>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="8dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="ЗАПУСК"
+                            android:background="#ffffff"
+                            android:textColor="#4a148c"
+                            android:padding="0dp"
+                            android:textFontWeight="500"
+                            />
+
+
+                        <TextView
+                            android:layout_height="wrap_content"
+                            android:layout_width="wrap_content"
+                            android:text="СТАТИСТИКА"
+                            android:background="#ffffff"
+                            android:textColor="#4a148c"
+                            android:padding="0dp"
+                            android:textFontWeight="500"
+                            android:paddingStart="32dp"
+                            />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <Button
+                android:id="@+id/sendStatistic"
+                android:layout_width="match_parent"
+                android:layout_marginTop="16dp"
+                android:text="Отправить результаты"
+                android:background="#4a148c"
+                android:textColor="#ffffff"
+                android:layout_height="wrap_content" />
 
         </LinearLayout>
 
-
     </ScrollView>
-
 
 </LinearLayout>
