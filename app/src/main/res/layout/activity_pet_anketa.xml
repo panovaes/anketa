@@ -56,11 +56,6 @@
 
             </RadioGroup>
 
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
 
             <TextView
@@ -100,13 +95,6 @@
                     android:id="@+id/q2_3"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-            />
-
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
             />
 
 
@@ -161,13 +149,6 @@
 
             </RadioGroup>
 
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -179,12 +160,6 @@
                     android:id="@+id/q4"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-            />
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
             />
 
             <TextView
@@ -200,12 +175,6 @@
                     android:layout_height="match_parent"
             />
 
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -217,12 +186,6 @@
                     android:id="@+id/q6"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-            />
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
             />
 
             <TextView
@@ -270,11 +233,6 @@
                     android:text="Другие вещи"
             />
 
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
             <EditText
                     android:id="@+id/email"
@@ -283,11 +241,6 @@
                     android:hint="E-MAIL"
             />
 
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
             <Button
                     android:id="@+id/success"

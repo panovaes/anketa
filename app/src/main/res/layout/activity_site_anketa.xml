@@ -64,13 +64,7 @@
                         android:text="Очень сложно"
                 />
 
-
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
 
             <TextView
@@ -117,12 +111,6 @@
                         android:text="Очень сложно"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
 
             <TextView
                     android:layout_width="match_parent"
@@ -168,11 +156,6 @@
                         android:text="Непонятна"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
 
             <TextView
@@ -219,12 +202,6 @@
                         android:text="Мне он совсем не нравится"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
 
             <TextView
                     android:layout_width="match_parent"
@@ -264,12 +241,6 @@
                         android:text="Совсем не актуальное"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
 
             <TextView
                     android:layout_width="match_parent"
@@ -315,12 +286,6 @@
                         android:text="Очень сложно"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
 
             <TextView
                     android:layout_width="match_parent"
@@ -366,12 +331,6 @@
                         android:text="Очень сложно"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
 
             <TextView
                     android:layout_width="match_parent"
@@ -417,12 +376,6 @@
                         android:text="Я совсем не доверяю ему"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
 
             <TextView
                     android:layout_width="match_parent"
@@ -480,11 +433,6 @@
                         android:text="Очень недоволен/льна"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
 
             <TextView
@@ -531,11 +479,6 @@
                         android:text="Несомненно нет"
                 />
             </RadioGroup>
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
 
             <EditText
@@ -544,13 +487,6 @@
                     android:layout_height="match_parent"
                     android:hint="E-MAIL"
             />
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
 
             <Button
                     android:id="@+id/success"

@@ -67,13 +67,7 @@
                 />
 
             </RadioGroup>
-
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
+            
 
             <TextView
                     android:layout_width="match_parent"
@@ -133,13 +127,7 @@
                 />
 
             </RadioGroup>
-
-
-            <View android:layout_width="match_parent"
-                               android:layout_height="1dp"
-                               android:background="@android:color/darker_gray"
-                               android:layout_margin="15dp"
-            />
+            
 
             <TextView
                     android:layout_width="match_parent"
@@ -193,14 +181,7 @@
 
 
             </RadioGroup>
-
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
+            
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -272,12 +253,6 @@
                     android:text="Действующий"
             />
 
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -315,12 +290,6 @@
                 />
 
             </RadioGroup>
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
             <TextView
                     android:layout_width="match_parent"
@@ -388,13 +357,6 @@
 
             </RadioGroup>
 
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
             <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
@@ -440,11 +402,6 @@
 
             </RadioGroup>
 
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
             <TextView
                     android:layout_width="match_parent"
@@ -459,12 +416,6 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"/>
 
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
-
 
             <EditText
                     android:id="@+id/email"
@@ -473,12 +424,6 @@
                     android:hint="E-MAIL"
             />
 
-
-            <View android:layout_width="match_parent"
-                  android:layout_height="1dp"
-                  android:background="@android:color/darker_gray"
-                  android:layout_margin="15dp"
-            />
 
             <Button
                     android:id="@+id/success"
